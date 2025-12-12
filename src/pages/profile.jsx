@@ -130,13 +130,11 @@ export default function Profile(props) {
               <span className="text-sm text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-800 px-2 py-1 rounded-full">2个月29天</span>
             </div>
             
-            <div className="grid grid-cols-2 gap-4">
-              {/* 添加宝宝数据按钮 */}
-              <button onClick={handleAddBabyData} className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm flex flex-col items-center justify-center space-y-2 hover:bg-blue-50 dark:hover:bg-blue-900 transition-colors border-2 border-dashed border-blue-300 dark:border-blue-600">
-                <Plus className="text-blue-500 dark:text-blue-400" size={24} />
-                <span className="text-blue-600 dark:text-blue-400 font-medium text-sm">添加宝宝数据</span>
-              </button>
-            </div>
+            {/* 添加宝宝数据按钮 - 现在放在模块下方，宽度拉长 */}
+            <button onClick={handleAddBabyData} className="w-full bg-white dark:bg-gray-800 rounded-lg p-4 shadow-sm flex flex-col items-center justify-center space-y-2 hover:bg-blue-50 dark:hover:bg-blue-900 transition-colors border-2 border-dashed border-blue-300 dark:border-blue-600 mt-4">
+              <Plus className="text-blue-500 dark:text-blue-400" size={24} />
+              <span className="text-blue-600 dark:text-blue-400 font-medium text-sm">添加宝宝数据</span>
+            </button>
           </div>}
 
         {/* 设置选项 */}
